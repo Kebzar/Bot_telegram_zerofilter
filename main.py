@@ -416,7 +416,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         
         # Crea modello e genera risposta
         model = genai.GenerativeModel(
-            model_name="gemini-1.5-flash",
+            model_name="gemini-2.5-flash",
             generation_config=GENERATION_CONFIG,
             safety_settings=SAFETY_SETTINGS
         )
